@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ $CFILE -o c
+gcc $(echo $CFILE >> my_c_file) -o c
