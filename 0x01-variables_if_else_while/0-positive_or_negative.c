@@ -5,7 +5,7 @@
 
 /**
  * main - if condition that outputs based on outcome
- * return: 0 this returns zero
+ * Return: 0 this returns zero
  */
 int main(void)
 {
