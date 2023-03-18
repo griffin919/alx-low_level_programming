@@ -4,7 +4,8 @@
 /* more headers goes here */
 
 /**
- * main - if condition that outputs based on outcome 
+ * main - if condition that outputs based on outcome
+ * return: 0
  */
 int main(void)
 {
