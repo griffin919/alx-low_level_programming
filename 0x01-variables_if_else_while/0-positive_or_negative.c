@@ -3,9 +3,8 @@
 #include <time.h>
 /* more headers goes here */
 
-/*betty style doc for function main goes there */
 /**
- * This program outputs is positive,negative or zero based on the random number generated
+ * main - if condition that outputs based on outcome 
  */
 int main(void)
 {
