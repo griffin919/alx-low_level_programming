@@ -1,10 +1,12 @@
-/*print whether the number stored in the variable n is positive or negative*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes here */
 
 /*betty style doc for function main goes there */
+/**
+ * This program outputs is positive,negative or zero based on the random number generated
+ */
 int main(void)
 {
 	int n;
