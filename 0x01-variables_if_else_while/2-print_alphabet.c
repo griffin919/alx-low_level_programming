@@ -20,6 +20,7 @@ int main(void)
 		putchar(c);
 		c++;
 	}
+	puts("\n");
 
 	return (0);
 }
