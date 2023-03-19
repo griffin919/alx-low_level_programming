@@ -15,7 +15,7 @@ int main(void)
 	int n, len;
 	char int_to_str[10], last_digit;
 	char strt[20] = {"Last digit of"};
-
+i
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 /*
@@ -26,6 +26,10 @@ int main(void)
 	len = strlen(int_to_str);
 	last_digit = (int) int_to_str[len - 1];
 
+	if (n < 0)
+	{
+		last_digit = -last_digit;
+	}
 	if (last_digit > 5)
 		printf("%s %d is %c and is greater than 5\n", strt, n, last_digit);
 	else if (last_digit != 0 && last_digit < 6)
