@@ -5,19 +5,17 @@
 #include <ctype.h>
 
 /**
- * print_alphabet - prints alphabet in lowercase
- * The character to print
- * Return: void
+ * _islower - checks if alphabet is lowercase
+ *
+ * @c: islower arg
+ * Return: 1 true 0 means false
  */
 int _islower(int c)
 {
-
 	if (islower(c))
 		return (1);
 	else
-		return(0);
+		return (0);
 
-	
 }
-
 #endif
