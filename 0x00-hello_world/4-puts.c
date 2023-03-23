@@ -1,8 +1,12 @@
 #include <stdio.h>
-
-int main(void){
+/**
+ *  main - Outputs string exact string
+ *  Return: 0 means success
+ */
+int main(void)
+{
 	puts("\"Programming is like building a multilingual puzzle");
 
-	return 0;
+	return (0);
 }
 
