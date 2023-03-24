@@ -1,6 +1,8 @@
 #ifndef MAIN_H_0x04
 #define MAIN_H_0x04
 
+void print_square(int size);
+
 void print_diagonal(int n);
 
 void print_line(int n);
