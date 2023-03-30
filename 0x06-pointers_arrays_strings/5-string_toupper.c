@@ -12,15 +12,13 @@
  */
 char *string_toupper(char *str)
 {
-	char *result = strdup(str);
-	int len = strlen(str);
+	char *ptr = str;
 
-	int i;
-
-	for (i = 0; i < len; i++)
+	while (*ptr != '\0')
 	{
-		result[i] = toupper(str[i]);
+		*ptr = toupper(*ptr);
+		ptr++;
 	}
 
-	return (result);
+	return (str);
 }
