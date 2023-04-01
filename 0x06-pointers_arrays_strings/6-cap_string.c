@@ -15,7 +15,7 @@ char *cap_string(char *str)
 	int len = strlen(str);
 	int i = 0;
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (str[i] != '\0')
 		{
@@ -26,7 +26,7 @@ char *cap_string(char *str)
 		}
 	}
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (str[i] != '\0')
 		{
