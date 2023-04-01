@@ -2,30 +2,31 @@
 #include "string.h"
 
 /**
- *leet- a function that encodes a string into 1337
+ * *leet - function that encodes a string
  *
- *@str - leet function param
+ * @str: leet function param
  *
- *Return : str
+ * Return: leet
  */
 char *leet(char *str)
 {
-	int len, i;
+	int i, j;
 
-	len = strlen(str);
+	char *p = str;
 
-	for (i = 0; i < len; i++)
+	char tobe_swapped[10] = "aAeEoOtTlL";
+	char swapped_with[10] = "4433007711";
+
+	for (i = 0; p[i]; i++)
 	{
-		if (str[i] == 'A' || str[i] == 'a')
-			str[i] = (4 + '0');
-		else if (str[i] == 'E' || str[i] == 'e')
-			str[i] = (3 + '0');
-		else if (str[i] == 'O' || str[i] == 'o')
-			str[i] = (0 + '0');
-		else if (str[i] == 'T' || str[i] == 't')
-			str[i] = (7 + '0');
-		else if (str[i] == 'L' || str[i] == 'l')
-			str[i] = 1 + '0';
+		for (j = 0; j < 10; j++)
+		{
+			if (tobe_swapped[j] == p[i])
+			{
+				p[i] = swapped_with[j];
+				break;
+			}
+		}
 	}
 
 	return (str);
