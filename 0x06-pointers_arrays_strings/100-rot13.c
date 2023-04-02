@@ -12,7 +12,7 @@ char *rot13(char *str)
 {
 	char *ptr = str;
 
-	char alphax2[52] = "abcdefjhijklmnopqrstuvwxyzabcdefjhijklmnopqrstuvwxyz";
+	char alphax2[52] = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 	int alpha_index, i;
 
 	for (i = 0; ptr[i] != '\0'; i++)
