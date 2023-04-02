@@ -17,34 +17,16 @@ char *rot13(char *str)
 
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
-		if (ptr[i] >= 'A' && ptr[i] <= 'Z')
+		for (alpha_index = 0; alpha_index < 26; alpha_index++)
 		{
-			for (alpha_index = 0; alpha_index < 26; alpha_index++)
+			char letter = 'a' + alpha_index;
+
+			if (ptr[i] == letter)
 			{
-				char letter = 'a' + alpha_index;
+				int offset_index = alpha_index + 13;
 
-				if (ptr[i] == letter)
-				{
-					int offset_index = alpha_index + 13;
-
-					ptr[i] = alphax2[offset_index];
-					break;
-				}
-			}
-		}
-		if (ptr[i] >= 'a' && ptr[i] <= 'z')
-		{
-			for (alpha_index = 0; alpha_index < 26; alpha_index++)
-			{
-				char letter = 'a' + alpha_index;
-
-				if (ptr[i] == letter)
-				{
-					int offset_index = alpha_index + 13;
-
-					ptr[i] = alphax2[offset_index];
-					break;
-				}
+				ptr[i] = alphax2[offset_index];
+				break;
 			}
 		}
 	}
