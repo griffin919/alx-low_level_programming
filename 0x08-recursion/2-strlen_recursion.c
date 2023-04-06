@@ -2,10 +2,12 @@
 #include <string.h>
 
 /**
- * _print_rev_recursion - a function that returns
+ * _strlen_recursion - a function that returns
  * the length of a string
  *
  * @s: string to be counted
+ *
+ * Return: 0 if end of string
  */
 int _strlen_recursion(char *s)
 {
@@ -13,9 +15,8 @@ int _strlen_recursion(char *s)
 	{
 		return (0);
 	}
-	else 
+	else
 	{
-		return 1 + _strlen_recursion(s + 1);
+		return (1 + _strlen_recursion(s + 1));
 	}
-	
 }
