@@ -1,4 +1,4 @@
 #!/bin/bash
 
 gcc -c *.c
-ar rsc libmy.a *.o -ls
+ar rsc liball.a *.o -ls
