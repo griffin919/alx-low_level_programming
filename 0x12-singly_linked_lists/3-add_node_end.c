@@ -3,9 +3,9 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * add_node_end
+ * add_node_end - adds node to start of linked list
  * @head: lead pointer
- * @str
+ * @str: string
  *
  * Return: nextnode
  */
@@ -19,7 +19,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		len++;
 
 	nextnode = malloc(sizeof(list_t));
-	
+
 	if (!nextnode)
 		return (NULL);
 
@@ -37,7 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp = temp->next;
 
 	temp->next = nextnode;
-	
+
 	return (nextnode);
 
 }
