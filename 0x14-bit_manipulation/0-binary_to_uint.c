@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * power - custom function to calc exponents
@@ -32,7 +31,7 @@ unsigned int binary_to_uint (const char *b)
 
 	while (b[len] != '\0')
 	{
-		if ((b[len] != '1' && b[len] != '0') || b == NULL)
+		if ((b[len] != '1' && b[len] != '0') || !b)
 			return (0);
 		len++;
 	}
